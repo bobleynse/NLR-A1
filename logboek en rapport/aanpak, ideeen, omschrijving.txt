@@ -1,0 +1,8 @@
+
+
+
+De aanpak van ons project is om ons als eerste te gaan verdiepen in technieken en hulpmiddelen die we waarschijnlijk gaan gebruiken, zoals tensorflow, (geo)tiffs, GDAL etc. Totdat we de dataset ontvangen zijn we vooral hiermee bezig. 
+
+Ons plan als we de dataset eenmaal hebben ontvangen is om de data om te zetten naar een format waarin alle gegevens over de wegen (welk soort weg etc.) makkelijk leesbaar is voor ons en de computer. Dit zal een overzicht geven van welke uitdagingen ons te wachten staan.
+
+Hierna is het van belang om de data op te splitsen in training- en validationdata. Dit doen we door een deel van de kaart aan te wijzen als trainingsdeel en de rest als validationdeel, om zo voor te bereiden op het trainen van het systeem.
