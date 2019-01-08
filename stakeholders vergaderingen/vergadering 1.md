@@ -15,7 +15,7 @@ Python: GDAL library
 Opdracht:
 - For a single image:
 - Identify roads
-- Classify roads (11 different classes)
+- Classify roads (12 different classes)
 - Probeer het netwerk te laten werken als wegen door bomen worden geblokkeerd
 - Bonus: Possibly explore network character
 
@@ -27,7 +27,7 @@ Dataset:
 - .tiff file
 - 1:10.000 GIS vector database
 - 4 kleurwegen: red, green, blue en near infra-red (NIR)
-- Product of merge 0.8m panchromatic and 24m color.
+- Product of merge 0.8m panchromatic and 2.4m color.
 - Pixels rasterized to 0.8m
 - 8 bit images
 - Optioneel: Vectoren zijn beschikbaar op aanvraag
