@@ -12,6 +12,17 @@ Inleidende presentatie van het project
 - Input-data analyseren. Als we deze rond 4 uur nog niet binnen hebben mailen. (we kunnen eventueel ook gelijk mailen dat we de bestanden graag tegemoet zien en dat we benieuwd zijn met welke libraries zij werken om het uniform te houden)
 - Start aan technisch rapport: onderzoeksvraag bedenken, opmaak in LaTeX zetten.
 
+Rutger was naar een begrafenis, dit inhalen:
+- installeer python 3.6.7-amd64 (alleen hierin werkt tensorflow)
+- installeer matplotlib numpy en dergerlijke
+- pip install tensorflow
+- installeer GDAL (programma om tiffs te bewerken)   
+  - Download van deze site: https://www.lfd.uci.edu/~gohlke/pythonlibs/#gdal deze file: GDAL‑2.3.3‑cp36‑cp36m‑win_amd64.whl
+  - pip install vanuit je juiste folder in de terminal
+  - py -m pip install GDAL-2.3.3-cp36-cp36m-win32.whl
+- kijk of de testfiles werken
+
+
 # Week 2 - Machine Learning
 # Week 3 - Machine Learning
 # Week 4 - Presentatie en verslag
