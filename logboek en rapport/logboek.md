@@ -8,8 +8,9 @@ Inleidende presentatie van het project
 - Uitzoeken hoe tiff bestanden werken.
 
 ## Dinsdag 8 januari
-- Uitzoeken hoe je Tensorflow installeert en hoe erin kunt werken. O.a. compatibiliteit met (geo)tiff bestanden, bestaande afbeeldingen labelen. 
-- Input-data analyseren. Als we deze rond 4 uur nog niet binnen hebben mailen. (we kunnen eventueel ook gelijk mailen dat we de bestanden graag tegemoet zien en dat we benieuwd zijn met welke libraries zij werken om het uniform te houden)
+- Uitgezocht hoe je Tensorflow installeert en hoe erin kunt werken. O.a. compatibiliteit met (geo)tiff bestanden, bestaande afbeeldingen labelen. (zie onderstaande installatiestappen)
+- Uitgezocht hoe je werkt met Tiff-files en een voorbeeldbestand aangemaakt hoe je Tiff-fi
+- Input-data analyseren. Als we deze rond 4 uur nog niet binnen hebben mailen.
 - Start aan technisch rapport: onderzoeksvraag bedenken, opmaak in LaTeX zetten.
 
 Rutger was naar een begrafenis, dit inhalen:
@@ -21,6 +22,16 @@ Rutger was naar een begrafenis, dit inhalen:
   - pip install vanuit je juiste folder in de terminal
   - py -m pip install GDAL-2.3.3-cp36-cp36m-win32.whl
 - kijk of de testfiles werken
+
+## Woensdag 9 januari
+### 10:00 - 10:30
+- Kennismakingsgesprek met onze TA
+
+
+## Stappen voor de toekomst
+- Split de data op in een training- en een testset
+- 
+
 
 
 # Week 2 - Machine Learning
