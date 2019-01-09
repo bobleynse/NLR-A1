@@ -1,0 +1,14 @@
+Ons project is geleverd door het Nederlands lucht- en Ruimtevaartcentrum. De taak is om in een gebied van ongeveer 20km x 20km een systeem te maken die automatisch wegen kan detecteren, classificieren en optioneel nog een netwerk van wegen kan herkennen.
+
+De aanpak van ons project is om ons als eerste te gaan verdiepen in libraries en bestandsformaten die ons zijn aangeraden door het NLR. Namelijk (geo)Tiffs, tensorflow en GDAL. (geo)Tiff is het bestandsformaat waarin we de ‘TripleSat satellite images’ en de ‘Top10NL road data’ zullen ontvangen. Tensorflow is een machine learning library die het NLR gebruikt. GDL is een library die Tiff bestanden omzet zodat tensorflow er iets mee kan.
+
+Wanneer we de dataset ontvangen zullen we deze splitsen in een training en validation set. Voor de trainingset moeten we de uit de satellietfoto's de gemapte wegen snijden en deze labelen. In eerste instantie zullen we alles als 'way' of 'background'labelen en wanneer we goede progressie maken zullen we onderscheid maken tussen 'highway', 'main road', regional road', 'local road', 'street' en 'background.'
+
+Als de data gelabeled is leren we het algoritme wat een weg is d.m.v. neural networks.
+
+Vragen:
+- logboek ook in het Engels?
+- Hoe label je wegvormige blokken wanneer ze diagonaal lopen? (allemaal losse vierkanten)
+- Hoeveel labels maak je?
+- Hoe combineer je de beslissingen van de verschillende colorbands?
+
