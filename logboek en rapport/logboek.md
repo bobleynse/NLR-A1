@@ -26,11 +26,20 @@ Rutger was naar een begrafenis, dit inhalen:
 ## Woensdag 9 januari
 ### 10:00 - 10:30
 - Kennismakingsgesprek met onze TA
+  - segmentation netwerken
+  - convolutional neural network
+
+### 10:30 - ...
+- Hopen dat we de data in de loop van de dag ontvangen
+- 
 
 
 ## Stappen voor de toekomst
 - Split de data op in een training- en een testset
-- 
+- snij de achtergrond uit de trainingset en hou de wegen over
+- Leer deze gelabelde wegen als weg
+- Leer ook verschillen tussen snelweg, provinciale weg en dergerlijke
+- gpu cuda
 
 
 
