@@ -39,19 +39,25 @@
         - Een erg vergelijkbaar project maar niet heel uitgebreid gecommend
     - https://github.com/jremillard/images-to-osm
         - Ook erg vergelijkbaar maar heeft dagen de tijd nodig om te runnen
-### Alex & Midas
+### Alex & Midas | 4 uur
 - Verder verdiept in tiff bestanden. Met name in de controls van de verschillende colorbands
-### Rutger | 2 uur
+### Rutger | 4 uur
 - installatie uitgezocht voor een Ubuntu systeem
 ### Bob | 2 uur
 - Presentatie, logboek en wekelijks plan voorbereiden
+### Bob | 2 uur
+- Tiff maping uitgezocht
+### Alex & Midas | 2 uur
+- Data ontvangst van het NLR
+- Bestandsformaten geanalyseerd
+- Begonnen met het opknippen in kleinere delen zonder kwaliteitsverlies
 
 # Donderdag 10 januari
+### Alex & Midas | 4 uur
+- Losse Tif RGB waardes gecombineerd tot een jpg om eerst een simpele segmentation network te kunnen leren
+### Rutger & Bob | 4 uur
+- Airs project gecommend en gekeken hoe we ons project hierin kunnen implementeren
 
-
-## Stappen voor de toekomst
-- Split de data op in een training- en een testset
-- snij de achtergrond uit de trainingset en hou de wegen over
-- Leer deze gelabelde wegen als weg
-- Leer ook verschillen tussen snelweg, provinciale weg en dergerlijke
-- gpu cuda
+# Vrijdag
+### Bob | 2 uur
+- Presentatie van Maandag voorbereid
