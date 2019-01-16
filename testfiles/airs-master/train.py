@@ -38,8 +38,8 @@ classifier = tf.contrib.learn.DNNClassifier(feature_columns = featureColumns,
 
 # Define the training inputs
 def getTrainData():
-    x = tf.constant(trainData.data)
-    y = tf.constant(trainData.target)
+    x = trainData.data
+    y = trainData.target
     return x, y
 
 # Define the test inputs
