@@ -21,3 +21,7 @@
 - inzichtelijk
 ### Alex | 3 uur
 - Alex maakt de corresponderende roadmap 400x400 (weg of geen weg) in de vorm van airs. (zwart of weg)
+- Converteer grote tif naar naar kleinere tifs
+- Converteer kleinere tiffs naar csv
+- Converteer csv's naar correcte vorm van airs
+- Converteer correcte csv's naar tiffs
