@@ -2,32 +2,30 @@ from datetime import datetime
 import numpy as np
 import tensorflow as tf
 
+
 print(str(datetime.now()) + ': loading data files')
 # Data sets
-trainDataFileName = 'airs-dataset/train.csv'
-testDataFileName = 'airs-dataset/test.csv'
-validationDataFileName = 'airs-dataset/valid.csv'
+trainDataFileName = 'segmentation-dataset/train.csv'
+testDataFileName = 'segmentation-dataset/test.csv'
+validationDataFileName = 'segmentation-dataset/valid.csv'
 # Load datasets.
-trainData = tf.contrib.learn.datasets.base.load_csv_without_header(
-    filename=trainDataFileName,
-    target_dtype=np.int,
-    features_dtype=np.int)
-testData = tf.contrib.learn.datasets.base.load_csv_without_header(
-    filename=testDataFileName,
-    target_dtype=np.int,
-    features_dtype=np.int)
+trainData = np.loadtxt(trainDataFileName, delimiter=',')
+testData =  np.loadtxt(testDataFileName, delimiter=',')
 # validationData = tf.contrib.learn.datasets.base.load_csv_without_header(
 #     filename=validationDataFileName,
 #     target_dtype=np.int,
 #     features_dtype=np.int)
 
-trainingSteps = 1000
-totalTrainingSteps = 5000
+# Specify the neural network you want to use
+trainingSteps = 100
+totalTrainingSteps = 500
 
-featureColumns = [tf.contrib.layers.real_valued_column("", dimension=300)]
+featureColumns = [tf.contrib.layers.real_valued_column("", dimension=75)]
 hiddenUnits = [100, 150, 100, 50]
 classes = 2
-modelDir = 'model'
+
+# specify a folder name for the model
+modelDir = 'models/model'
 classifierConfig = tf.contrib.learn.RunConfig(save_checkpoints_secs = None, save_checkpoints_steps = trainingSteps)
 
 classifier = tf.contrib.learn.DNNClassifier(feature_columns = featureColumns,
@@ -38,14 +36,16 @@ classifier = tf.contrib.learn.DNNClassifier(feature_columns = featureColumns,
 
 # Define the training inputs
 def getTrainData():
-    x = tf.constant(trainData.data)
-    y = tf.constant(trainData.target)
+    x = tf.constant(trainData[:,:-1])
+    y = tf.constant(trainData[:,-1:])
+    print(x)
+    print(y)
     return x, y
 
 # Define the test inputs
 def getTestData():
-    x = tf.constant(testData.data)
-    y = tf.constant(testData.target)
+    x = tf.constant(testData[:,:-1])
+    y = tf.constant(testData[:,-1:])
     return x, y
 
 # Define the validation inputs
