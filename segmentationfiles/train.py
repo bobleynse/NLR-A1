@@ -10,13 +10,13 @@ testDataFileName = 'segmentation-dataset/test.csv'
 validationDataFileName = 'segmentation-dataset/valid.csv'
 # Load datasets.
 trainData = np.loadtxt(trainDataFileName, delimiter=',')
-print(trainData)
 testData =  np.loadtxt(testDataFileName, delimiter=',')
 # validationData = tf.contrib.learn.datasets.base.load_csv_without_header(
 #     filename=validationDataFileName,
 #     target_dtype=np.int,
 #     features_dtype=np.int)
 
+# Specify the neural network you want to use
 trainingSteps = 100
 totalTrainingSteps = 500
 
@@ -25,7 +25,7 @@ hiddenUnits = [100, 150, 100, 50]
 classes = 2
 
 # specify a folder name for the model
-modelDir = 'model'
+modelDir = 'models/model'
 classifierConfig = tf.contrib.learn.RunConfig(save_checkpoints_secs = None, save_checkpoints_steps = trainingSteps)
 
 classifier = tf.contrib.learn.DNNClassifier(feature_columns = featureColumns,
