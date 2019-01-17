@@ -1,5 +1,5 @@
 # NLR-A1
-A UvA group project for Machine Learning and Decision Making
+A UvA group project for Machine Learning and Decision Making. We used a project by https://github.com/mahmoudmohsen213/airs
 
 ## Tools
 - Python 3.6.7
@@ -17,5 +17,6 @@ A UvA group project for Machine Learning and Decision Making
 5. Run 'classify.py' giving it two cmd arguments, the name if the input image file from the previous step, and the desired name of the output image file. It should generate the corresponding binary mask in 'image-output' directory.
 
 ## Adjust the neural network
-You can adjust the neural network in train.py. Make sure you make the same adjustments in classify.py
-
+You can adjust the neural network in train.py. Make sure you make the same adjustments in classify.py. The default settings are:
+- 2 classes
+- 4 hidden layers with 100, 150, 100 and 50 neurons respectively
