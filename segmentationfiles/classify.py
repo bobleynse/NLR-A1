@@ -25,6 +25,8 @@ print(str(datetime.now()) + ': initializing model...')
 featureColumns = [tf.contrib.layers.real_valued_column("", dimension=75)]
 # hiddenUnits = [100, 100, 100, 50]
 # hiddenUnits = [100, 150, 200, 150, 100, 50]
+
+# adjust the neural network, make sure you use the same model as in train.py
 hiddenUnits = [100, 150, 100, 50]
 classes = 2
 
