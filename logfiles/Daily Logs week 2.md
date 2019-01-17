@@ -54,11 +54,21 @@
 - Readme gemaakt zo dat iedereen een netwerk kan trainen
 - Logboek en plan updaten
 
-### Rutger | 3
+### Rutger | 3 uur
 - Huidige voortgang beschreven in het technisch rapport
 
 
 # Toekomstplannen
 - Het "weg, geen weg" trainen met onze eigen data
+- Tijdsberekening 
 - Een gescheiden, "meerdere wegen" classificatie schrijven
+- Met grafieken onderbouwen waarom we een specifieke hoeveelheid 
+- Een postprocessing algoritme schrijven. Bijv. losse pixels wegfilteren die overblijven.
 - Programma schrijven die wegen op een satellietfoto plot
+
+# Vragen
+- Hoe wil het NLR de output zien?
+  - train
+  - test
+  - validation
+- Kloppen de kleuren van onze Tiff? Daken worden blauw namelijk
