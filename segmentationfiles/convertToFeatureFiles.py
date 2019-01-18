@@ -1,6 +1,8 @@
 import random
 from os import listdir
 from PIL import Image
+from PIL import ImageFile
+ImageFile.LOAD_TRUNCATED_IMAGES = True
 from datetime import datetime
 
 # Saving path of every image.
@@ -15,8 +17,8 @@ trainInputImagesFiles = listdir(trainInputImagesPath)
 trainOutputImagesFiles = listdir(trainOutputImagesPath)
 testInputImagesFiles = listdir(testInputImagesPath)
 testOutputImagesFiles = listdir(testOutputImagesPath)
-validInputImagesFiles = listdir(validInputImagesPath)
-validOutputImagesFiles = listdir(validOutputImagesPath)
+#validInputImagesFiles = listdir(validInputImagesPath)
+#validOutputImagesFiles = listdir(validOutputImagesPath)
 
 # Checking if number of input and output images match.
 print(str(datetime.now()) + ': trainInputImagesFiles:', len(trainInputImagesFiles))
@@ -29,28 +31,28 @@ print(str(datetime.now()) + ': testOutputImagesFiles:', len(testOutputImagesFile
 if(len(testInputImagesFiles) != len(testOutputImagesFiles)):
     raise Exception('test input images and output images number mismatch')
 
-print(str(datetime.now()) + ': validInputImagesFiles:', len(validInputImagesFiles))
-print(str(datetime.now()) + ': validOutputImagesFiles:', len(validOutputImagesFiles))
-if(len(validInputImagesFiles) != len(validOutputImagesFiles)):
-    raise Exception('valid input images and output images number mismatch')
+#print(str(datetime.now()) + ': validInputImagesFiles:', len(validInputImagesFiles))
+#print(str(datetime.now()) + ': validOutputImagesFiles:', len(validOutputImagesFiles))
+#if(len(validInputImagesFiles) != len(validOutputImagesFiles)):
+#    raise Exception('valid input images and output images number mismatch')
 
 for i in range(len(trainInputImagesFiles)):
-    inputImageFile = trainInputImagesFiles[i][:-5]
-    outputImageFile = trainOutputImagesFiles[i][:-4]
+    inputImageFile = trainInputImagesFiles[i]#[:-5]
+    outputImageFile = trainOutputImagesFiles[i]#[:-4]
     if(inputImageFile != outputImageFile):
         raise Exception('train inputImageFile and outputImageFile mismatch at index', str(i))
 
 for i in range(len(testInputImagesFiles)):
-    inputImageFile = testInputImagesFiles[i][:-5]
-    outputImageFile = testOutputImagesFiles[i][:-4]
+    inputImageFile = testInputImagesFiles[i]#[:-5]
+    outputImageFile = testOutputImagesFiles[i]#[:-4]
     if(inputImageFile != outputImageFile):
         raise Exception('test inputImageFile and outputImageFile mismatch at index', str(i))
         
-for i in range(len(validInputImagesFiles)):
-    inputImageFile = validInputImagesFiles[i][:-5]
-    outputImageFile = validOutputImagesFiles[i][:-4]
-    if(inputImageFile != outputImageFile):
-        raise Exception('valid inputImageFile and outputImageFile mismatch at index', str(i))
+#for i in range(len(validInputImagesFiles)):
+#    inputImageFile = validInputImagesFiles[i][:-5]
+#    outputImageFile = validOutputImagesFiles[i][:-4]
+#    if(inputImageFile != outputImageFile):
+#        raise Exception('valid inputImageFile and outputImageFile mismatch at index', str(i))
 
 print(str(datetime.now()) + ': input and output files check success')
 
@@ -214,6 +216,6 @@ print(str(datetime.now()) + ': writing testDataFile')
 writeDataFile(testInputImagesPath, testOutputImagesPath, testInputImagesFiles, testOutputImagesFiles, testDataFileName)
 print(str(datetime.now()) + ': testDataFile complete')
 
-print(str(datetime.now()) + ': writing validDataFile')
-writeDataFile(validInputImagesPath, validOutputImagesPath, validInputImagesFiles, validOutputImagesFiles, validDataFileName)
-print(str(datetime.now()) + ': validDataFile complete')
+#print(str(datetime.now()) + ': writing validDataFile')
+#writeDataFile(validInputImagesPath, validOutputImagesPath, validInputImagesFiles, validOutputImagesFiles, validDataFileName)
+#print(str(datetime.now()) + ': validDataFile complete')
