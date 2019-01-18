@@ -79,6 +79,11 @@
 - Grafiek aanpassing rectSize in convertToFeatFiles.py
 - Grafiek aanpassing trainingSteps in train.py 
 - Grafiek aanpassingen lineslimit in convertToFeatFiles.py
+TODO: trainingsteps 100 - 500- 1000
+    rectsize 1 - 3 - 5
+    lineslimit 200000 - 400000 - 1000000
+-accuracy noteren!!!
+- 5 training img, 2 test img, rectsize = 5, trainingsteps: 100, lineslimit: 200000, kost .. minuten en .. seconden om te trainen
 
 ### Bob
 - Presentatie maken
