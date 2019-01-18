@@ -73,7 +73,7 @@
 - Start met het schrijven van een layerfunctie schrijven
 
 ### Alex
-- Onderzoek hoe je je GPU inschakkelt
+- Onderzoek hoe je je GPU inschakelt
 - Huidige training/ classificatie verbeteren, IR, andere hidden layers
 - VERGEET NIET DE TIJDEN TE METEN
 - Grafiek aanpassing rectSize in convertToFeatFiles.py
