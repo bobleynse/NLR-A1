@@ -53,4 +53,4 @@ ytiles = 10
 for y in range(0, ytiles * stepsize, stepsize):
     for x in range(0, xtiles * stepsize, stepsize):
         slicedRoadmap = roadmap[x:(x + stepsize), y:(y + stepsize)]
-        imsave('x={}-{}_y={}-{}.tif'.format(x , (x + stepsize), y , (y + stepsize)), slicedRoadmap)
+        imsave('x={}-{}_y={}-{}.tif'.format(y , (y + stepsize), x , (x + stepsize)), slicedRoadmap)
