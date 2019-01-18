@@ -62,8 +62,31 @@
 # Vrijdag 18 januari
 
 ### Rutger
+- Start met het maken van een Multi-road classifier
+- in convertToFeatFiles.py het aantal classes aanpassen
+- in train.py
+- in classify.py
 
-# Toekomstplannen
+### Midas
+- Tif to jpg converter gemaakt
+- IR voorbereiden
+- Start met het schrijven van een layerfunctie schrijven
+
+### Alex
+- Onderzoek hoe je je GPU inschakkelt
+- Huidige training/ classificatie verbeteren, IR, andere hidden layers
+- VERGEET NIET DE TIJDEN TE METEN
+- Grafiek aanpassing rectSize in convertToFeatFiles.py
+- Grafiek aanpassing trainingSteps in train.py 
+- Grafiek aanpassingen lineslimit in convertToFeatFiles.py
+
+### Bob
+- Presentatie maken
+- Logboek maken
+- Plan week 3 maken
+- Iedereen proberen te helpen
+
+## Toekomstplannen
 - Het "weg, geen weg" trainen met onze eigen data
 - Tijdsberekening 
 - Een gescheiden, "meerdere wegen" classificatie schrijven
@@ -71,7 +94,7 @@
 - Een postprocessing algoritme schrijven. Bijv. losse pixels wegfilteren die overblijven.
 - Programma schrijven die wegen op een satellietfoto plot
 
-# Vragen
+## Vragen
 - Hoe wil het NLR de output zien?
   - train
   - test
