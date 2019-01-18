@@ -44,7 +44,7 @@
 
 # Donderdag 17 januari
 
-### Alex & Midas | 3
+### Alex & Midas | 5
 - Onze eigen data opgeknipt in stukken van 2500x2500 pixels voor de satellietfoto's en bijbehorende roadmap
 
 ### Bob | 3 uur
@@ -57,6 +57,11 @@
 ### Rutger | 3 uur
 - Huidige voortgang beschreven in het technisch rapport
 
+### Rutger & Bob | 
+
+# Vrijdag 18 januari
+
+### Rutger
 
 # Toekomstplannen
 - Het "weg, geen weg" trainen met onze eigen data
@@ -72,3 +77,5 @@
   - test
   - validation
 - Kloppen de kleuren van onze Tiff? Daken worden blauw namelijk
+- Eerst weg segmenteren en daaroverheen de rest of alles tegelijk segmenteren?
+

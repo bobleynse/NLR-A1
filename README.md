@@ -14,7 +14,8 @@ A UvA group project for Machine Learning and Decision Making. We used a project 
 3. Run 'train.py'. It should build the NN in a specified folder, and train it using the generated files in the previous step (this may take several minutes, hours, or days depending on the size of the files, the size of the network, and the number of training iterations).
 ### Classify images
 4. Prepare the input image in 'image-input' directory.
-5. Run 'classify.py' giving it two cmd arguments, the name if the input image file from the previous step, and the desired name of the output image file. It should generate the corresponding binary mask in 'image-output' directory.
+5. Select in classify.py which model you want to use
+6. Run 'classify.py' giving it two cmd arguments, the name if the input image file from the previous step, and the desired name of the output image file. It should generate the corresponding binary mask in 'image-output' directory.
 
 ## Adjust the neural network
 You can adjust the neural network in train.py. Make sure you make the same adjustments in classify.py. The default settings are:
