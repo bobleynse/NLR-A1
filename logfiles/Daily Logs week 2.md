@@ -88,6 +88,7 @@ TODO: trainingsteps 100 - 500- 1000
 - 10 training, 2 test img, rectsize=7, trainingsteps=250, lineslimit=300000. trainingtijd 20 minuten en 10 sec, accuracy: 0.66662335. Opnieuw error :(
 - 10 training, 2 test img, rectsize=7, trainingsteps=250, lineslimit=200000, trainingtijd 21 min en 3 sec, tantoe error.
 - 10 training, 2 test img, rectsize=5, trainingsteps=100, lineslimit=200000, trainingtijd 21 min en 3 sec, tantoe error.
+- 5 training, 2 test img, rectsize=5, trainingsteps=100, lineslimit = 200000, trainingtijd 12 minuten, geeft geen output??
 ### Bob
 - Presentatie maken
 - Logboek maken
