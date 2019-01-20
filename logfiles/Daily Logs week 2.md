@@ -83,8 +83,11 @@ TODO: trainingsteps 100 - 500- 1000
     rectsize 1 - 3 - 5
     lineslimit 200000 - 400000 - 1000000
 -accuracy noteren!!!
-- 5 training img, 2 test img, rectsize = 5, trainingsteps: 100, lineslimit: 200000, kost .. minuten en .. seconden om te trainen
-
+- 5 training img, 2 test img, rectsize = 5, trainingsteps: 100, lineslimit: 200000, kost 11 minuten en 8 seconden om te trainen met een accuracy van 0.6665867. Als een jpeg wordt gebruikt om te testen is het resultaat erg hoog.
+- 10 training, 2 test img, rectsize = 7, trainingsteps: 500, lineslimit: 400000. Trainingtijd niet gemeten, ongeveer 30 minuten. Accuracy van  0.66623914. Classify krijgt een value error: "Cannot create a tensor proto whose content is larger than 2GB."
+- 10 training, 2 test img, rectsize=7, trainingsteps=250, lineslimit=300000. trainingtijd 20 minuten en 10 sec, accuracy: 0.66662335. Opnieuw error :(
+- 10 training, 2 test img, rectsize=7, trainingsteps=250, lineslimit=200000, trainingtijd 21 min en 3 sec, tantoe error.
+- 10 training, 2 test img, rectsize=5, trainingsteps=100, lineslimit=200000, trainingtijd 21 min en 3 sec, tantoe error.
 ### Bob
 - Presentatie maken
 - Logboek maken
