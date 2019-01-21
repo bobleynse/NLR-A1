@@ -59,20 +59,20 @@
 
 ### Rutger & Bob | 
 
-# Vrijdag 18 januari
+# Vrijdag 18 januari en het weekend
 
-### Rutger
+### Rutger | 8 uur
 - Start met het maken van een Multi-road classifier
 - in convertToFeatFiles.py het aantal classes aanpassen
 - in train.py
 - in classify.py
 
-### Midas
+### Midas | 7 uur
 - Tif to jpg converter gemaakt
 - IR voorbereiden
 - Start met het schrijven van een layerfunctie schrijven
 
-### Alex
+### Alex | 9 uur
 - Onderzoek hoe je je GPU inschakelt
 - Huidige training/ classificatie verbeteren, IR, andere hidden layers
 - VERGEET NIET DE TIJDEN TE METEN
@@ -88,19 +88,21 @@ TODO: trainingsteps 100 - 500- 1000
 - 10 training, 2 test img, rectsize=7, trainingsteps=250, lineslimit=300000. trainingtijd 20 minuten en 10 sec, accuracy: 0.66662335. Opnieuw error :(
 - 10 training, 2 test img, rectsize=7, trainingsteps=250, lineslimit=200000, trainingtijd 21 min en 3 sec, tantoe error.
 - 10 training, 2 test img, rectsize=5, trainingsteps=100, lineslimit=200000, trainingtijd 21 min en 3 sec, tantoe error.
-### Bob
+### Bob | 8 uur
 - Presentatie maken
 - Logboek maken
 - Plan week 3 maken
 - Iedereen proberen te helpen
 
 ## Toekomstplannen
+- Infrarood toevoegen
 - Het "weg, geen weg" trainen met onze eigen data
 - Tijdsberekening 
 - Een gescheiden, "meerdere wegen" classificatie schrijven
 - Met grafieken onderbouwen waarom we een specifieke hoeveelheid 
 - Een postprocessing algoritme schrijven. Bijv. losse pixels wegfilteren die overblijven.
 - Programma schrijven die wegen op een satellietfoto plot
+- Runnen op en externe GPU
 
 ## Vragen
 - Hoe wil het NLR de output zien?
@@ -109,4 +111,9 @@ TODO: trainingsteps 100 - 500- 1000
   - validation
 - Kloppen de kleuren van onze Tiff? Daken worden blauw namelijk
 - Eerst weg segmenteren en daaroverheen de rest of alles tegelijk segmenteren?
+- Kunnen we classifien met betrekking tot de classifications van de omliggende punten
+- Begeleiding bij de supercomputer
 
+# Maandag 21 Januari
+
+Tif classificeren
