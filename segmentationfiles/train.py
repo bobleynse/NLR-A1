@@ -25,7 +25,7 @@ hiddenUnits = [100, 150, 100, 50]
 classes = 2
 
 # specify a folder name for the model
-modelDir = 'models/model'
+modelDir = 'models/model_21-01'
 classifierConfig = tf.contrib.learn.RunConfig(save_checkpoints_secs = None, save_checkpoints_steps = trainingSteps)
 
 classifier = tf.contrib.learn.DNNClassifier(feature_columns = featureColumns,
