@@ -63,7 +63,7 @@ def writeDataFileOld(inputImagePath, outputImagePath, inputImageFiles, outputIma
     nonroadPixel = 0
     neededPixel = 0
     
-    rectSize = 7
+    rectSize = 5
     
     for i in range(len(inputImageFiles)):
         #if(i > 0):
