@@ -12,8 +12,6 @@ trainOutputImagesPath = 'segmentation-dataset/train-output'
 testInputImagesPath = 'segmentation-dataset/test-input'
 testInputNIRPath = 'segmentation-dataset/test-input-NIR'
 testOutputImagesPath = 'segmentation-dataset/test-output'
-# validInputImagesPath = 'segmentation-dataset/valid-input'
-# validOutputImagesPath = 'segmentation-dataset/valid-output'
 
 trainInputImagesFiles = listdir(trainInputImagesPath)
 trainInputNIRFiles = listdir(trainInputNIRPath)
@@ -21,8 +19,6 @@ trainOutputImagesFiles = listdir(trainOutputImagesPath)
 testInputImagesFiles = listdir(testInputImagesPath)
 testInputNIRFiles = listdir(testInputNIRPath)
 testOutputImagesFiles = listdir(testOutputImagesPath)
-#validInputImagesFiles = listdir(validInputImagesPath)
-#validOutputImagesFiles = listdir(validOutputImagesPath)
 
 # Checking if number of input and output images match.
 print(str(datetime.now()) + ': trainInputImagesFiles:', len(trainInputImagesFiles))
@@ -37,11 +33,6 @@ print(str(datetime.now()) + ': testOutputImagesFiles:', len(testOutputImagesFile
 if(len(testInputImagesFiles) != len(testOutputImagesFiles) != len(testInputNIRFiles)):
     raise Exception('test input images and output images number mismatch')
 
-#print(str(datetime.now()) + ': validInputImagesFiles:', len(validInputImagesFiles))
-#print(str(datetime.now()) + ': validOutputImagesFiles:', len(validOutputImagesFiles))
-#if(len(validInputImagesFiles) != len(validOutputImagesFiles)):
-#    raise Exception('valid input images and output images number mismatch')
-
 for i in range(len(trainInputImagesFiles)):
     inputImageFile = trainInputImagesFiles[i]
     inputNIRFile = trainInputNIRFiles[i]
@@ -54,12 +45,6 @@ for i in range(len(testInputImagesFiles)):
     outputImageFile = testOutputImagesFiles[i]#[:-4]
     if(inputImageFile != outputImageFile):
         raise Exception('test inputImageFile and outputImageFile mismatch at index', str(i))
-        
-#for i in range(len(validInputImagesFiles)):
-#    inputImageFile = validInputImagesFiles[i][:-5]
-#    outputImageFile = validOutputImagesFiles[i][:-4]
-#    if(inputImageFile != outputImageFile):
-#        raise Exception('valid inputImageFile and outputImageFile mismatch at index', str(i))
 
 print(str(datetime.now()) + ': input and output files check success')
     
@@ -69,7 +54,7 @@ def writeDataFile(inputImagePath, inputNIRPath, outputImagePath, inputImageFiles
     dataFile = open(dataFileName, 'w')
     rectSize = 5
     linesCount = 0
-    linesLimit = 100000
+    linesLimit = 400000
     linesCountPerImage = 0
     linesLimitPerImage = (linesLimit / len(inputImageFiles)) + 1
     

@@ -12,17 +12,23 @@ testDataFileName = 'segmentation-dataset/testNIR.csv'
 trainData = np.loadtxt(trainDataFileName, delimiter=',')
 testData =  np.loadtxt(testDataFileName, delimiter=',')
 
+print(np.shape(trainData))
+print(np.shape(testData))
+
+
 # Specify the neural network you want to use
 rectSize = 5
+# Size between checkpoints
 trainingSteps = 100
+# total Size
 totalTrainingSteps = 500
 
 featureColumns = [tf.contrib.layers.real_valued_column("", dimension=rectSize*rectSize*4)]
 hiddenUnits = [100, 150, 100, 50]
 classes = 2
 
-# specify a folder name for the model
-modelDir = 'models/modelNIR_21-01'
+# specify a folder name for the model, model_steps_network
+modelDir = 'models/modelNIR_100_100x150x100x50'
 
 classifierConfig = tf.contrib.learn.RunConfig(save_checkpoints_secs = None, save_checkpoints_steps = trainingSteps)
 

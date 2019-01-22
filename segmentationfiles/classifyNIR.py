@@ -17,7 +17,7 @@ parts = 4
 partSize = 2500 / parts
 
 # adjust the neural network, make sure you use the same model as in train.py
-hiddenUnits = [110, 100, 75, 50]
+hiddenUnits = [100, 150, 100, 50]
 classes = 2
 
 
@@ -28,7 +28,7 @@ featureColumns = [tf.contrib.layers.real_valued_column("", dimension=rectSize*re
 classifier = tf.contrib.learn.DNNClassifier(feature_columns = featureColumns,
 												hidden_units = hiddenUnits,
 												n_classes = classes,
-												model_dir = 'models/modelNIR_22-01')
+												model_dir = 'models/modelNIR_')
 
 def extractFeatures():
     features = np.zeros((((inputImageXSize - ((rectSize//2)*2)) * (inputImageYSize - ((rectSize//2)*2))), rectSize*rectSize*4), dtype=np.int)
