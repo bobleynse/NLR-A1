@@ -11,7 +11,7 @@ if(len(sys.argv) != 4):
 # create an output image
 totalOutputImage = Image.new('RGB', (2496,2496))
 
-rectSize = 5
+rectSize = 3
 # the amount of parts you devide the input images in, when you don't devide your input can get to big (tensor proto error)
 parts = 4
 partSize = 2500 / parts
@@ -28,7 +28,7 @@ featureColumns = [tf.contrib.layers.real_valued_column("", dimension=rectSize*re
 classifier = tf.contrib.learn.DNNClassifier(feature_columns = featureColumns,
 												hidden_units = hiddenUnits,
 												n_classes = classes,
-												model_dir = 'models/modelNIR_')
+												model_dir = 'models/modelNIR_3_500_100x150x100x50')
 
 def extractFeatures():
     features = np.zeros((((inputImageXSize - ((rectSize//2)*2)) * (inputImageYSize - ((rectSize//2)*2))), rectSize*rectSize*4), dtype=np.int)

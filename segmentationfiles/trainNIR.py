@@ -17,7 +17,7 @@ print(np.shape(testData))
 
 
 # Specify the neural network you want to use
-rectSize = 5
+rectSize = 7
 # Size between checkpoints
 trainingSteps = 100
 # total Size
@@ -28,7 +28,7 @@ hiddenUnits = [100, 150, 100, 50]
 classes = 2
 
 # specify a folder name for the model, model_steps_network
-modelDir = 'models/modelNIR_100_100x150x100x50'
+modelDir = 'models/modelNIR_7_500_100x150x100x50'
 
 classifierConfig = tf.contrib.learn.RunConfig(save_checkpoints_secs = None, save_checkpoints_steps = trainingSteps)
 
