@@ -11,12 +11,12 @@ print(str(datetime.now()) + ': initializing input data...')
 
 rectSize = 5
 
-inputImagePath = 'image-input'
+inputImagePath = 'image-input/'
 inputImageFile = sys.argv[1]
 inputImage = Image.open(inputImagePath + '/' + inputImageFile)
 inputImageXSize, inputImageYSize = inputImage.size
 
-outputImagePath = 'image-output'
+outputImagePath = 'image-output/'
 outputImageFile = sys.argv[2]
 outputImage = inputImage.crop((rectSize//2, rectSize//2, inputImageXSize - (rectSize//2), inputImageYSize - (rectSize//2)))
 outputImageXSize, outputImageYSize = outputImage.size
