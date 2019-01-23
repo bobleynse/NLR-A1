@@ -111,13 +111,13 @@ def writeDataFile(inputImagePath, outputImagePath, inputImageFiles, outputImageF
     dataFile = open(dataFileName, 'w')
     rectSize = 5
     linesCount = 0
-    linesLimit = 400000
+    linesLimit = 200000
     linesCountPerImage = 0
     linesLimitPerImage = (linesLimit / len(inputImageFiles)) + 1
     
     # Looping through all input files.
     for i in range(len(inputImageFiles)):
-        print(str(datetime.now()) + ': prcessing image', i)
+        print(str(datetime.now()) + ': processing image', i)
         linesCountPerImage = 0
         inputImage = Image.open(inputImagePath + '/' + inputImageFiles[i])
         inputImageXSize, inputImageYSize = inputImage.size
