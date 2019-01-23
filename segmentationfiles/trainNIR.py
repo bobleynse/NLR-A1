@@ -28,7 +28,7 @@ hiddenUnits = [100, 150, 100, 50]
 classes = 2
 
 # specify a folder name for the model, model_steps_network
-modelDir = 'models/modelNIR_9_500_100x150x100x50'
+modelDir = 'models/modelNIR_{}_{}_{}x{}x{}x{}'.format(rectSize, totalTrainingSteps, hiddenUnits[0], hiddenUnits[1], hiddenUnits[2], hiddenUnits[3])
 
 classifierConfig = tf.contrib.learn.RunConfig(save_checkpoints_secs = None, save_checkpoints_steps = trainingSteps)
 
