@@ -11,8 +11,8 @@ if(len(sys.argv) != 4):
 # create an output image
 totalOutputImage = Image.new('RGB', (2496,2496))
 
-rectSize = 9
-# the amount of parts you devide the input images in, when you don't devide your input can get to big (tensor proto error)
+rectSize = 7
+# the amount of parts you divide the input images in, when you don't divide your input can get to big (tensor proto error)
 parts = 4
 partSize = 2500 / parts
 
@@ -37,8 +37,10 @@ def extractFeatures():
     print(np.shape(features))
     
     for x in range(rectSize//2, inputImageXSize - (rectSize//2)):
+        # print progress
         if x % 200 == 0:
             print('Progress: {}%'.format(round(x / inputImageXSize * 100, 1)))
+        
         for y in range(rectSize//2, inputImageYSize - (rectSize//2)):            
             rect = (x - (rectSize//2), y - (rectSize//2), x + (rectSize//2) + 1, y + (rectSize//2) + 1)
             subImage = inputImage.crop(rect).load()
@@ -57,7 +59,6 @@ def extractFeatures():
                     features[rowIndex, colIndex] = subNIR[i, j]
                     colIndex += 1
             rowIndex += 1
-
     return features
     
 def constructOutputImage(predictions):
@@ -71,13 +72,13 @@ def constructOutputImage(predictions):
 # classify        
 for i in range(parts):
     print(str(datetime.now()) + ": initializing input data part {} of {}".format(i + 1, parts))
-    # Devide the input images
+    # Divide the input images
     inputImagePath = 'image-input'
     inputImageFile = sys.argv[1]
     inputImage = Image.open(inputImagePath + '/' + inputImageFile)
     XSize, YSize = inputImage.size
 
-    # devide in x parts
+    # divide in x parts
     if i == 0:
         partYstart = i * partSize
         partYend = partSize + i * partSize + (rectSize//2)
@@ -110,6 +111,7 @@ for i in range(parts):
     print(str(datetime.now()) + ': constructing output image...')
     constructOutputImage(predictions)
 
+    # export seperate parts
     print(str(datetime.now()) + ': saving output image...')
     outputImage.save(outputImagePath + '/' + '{}_'.format(i) + outputImageFile.format(i), 'JPEG')
 
