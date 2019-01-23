@@ -29,7 +29,7 @@ featureColumns = [tf.contrib.layers.real_valued_column("", dimension=rectSize*re
 classifier = tf.contrib.learn.DNNClassifier(feature_columns = featureColumns,
 												hidden_units = hiddenUnits,
 												n_classes = classes,
-												model_dir = modelDir = 'models/modelNIR_{}_{}_{}x{}x{}x{}'.format(rectSize, totalTrainingSteps, hiddenUnits[0], hiddenUnits[1], hiddenUnits[2], hiddenUnits[3]))
+												model_dir = 'models/modelNIR_{}_{}_{}x{}x{}x{}'.format(rectSize, totalTrainingSteps, hiddenUnits[0], hiddenUnits[1], hiddenUnits[2], hiddenUnits[3]))
 
 def extractFeatures():
     features = np.zeros((((inputImageXSize - ((rectSize//2)*2)) * (inputImageYSize - ((rectSize//2)*2))), rectSize*rectSize*4), dtype=np.int)
