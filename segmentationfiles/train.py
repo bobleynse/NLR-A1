@@ -18,14 +18,14 @@ testData =  np.loadtxt(testDataFileName, delimiter=',').astype(int)
 
 # Specify the neural network you want to use
 trainingSteps = 100
-totalTrainingSteps = 10000
+totalTrainingSteps = 500
 
 featureColumns = [tf.contrib.layers.real_valued_column("", dimension=75)]
 hiddenUnits = [100, 150, 100, 50]
 classes = 2
 
 # specify a folder name for the model
-modelDir = 'models/model_22-01'
+modelDir = 'models/model_23-01'
 classifierConfig = tf.contrib.learn.RunConfig(save_checkpoints_secs = None, save_checkpoints_steps = trainingSteps)
 
 classifier = tf.contrib.learn.DNNClassifier(feature_columns = featureColumns,
