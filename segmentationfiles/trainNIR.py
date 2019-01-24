@@ -17,14 +17,14 @@ print(np.shape(testData))
 
 
 # Specify the neural network you want to use
-rectSize = 7
+rectSize = 7 
 # Size between checkpoints
 trainingSteps = 100
 # total Size
-totalTrainingSteps = 500
+totalTrainingSteps = 2000
 
 featureColumns = [tf.contrib.layers.real_valued_column("", dimension=rectSize*rectSize*4)]
-hiddenUnits = [100, 150, 100, 50]
+hiddenUnits = [210, 280, 140, 70]
 classes = 2
 
 # specify a folder name for the model, model_steps_network

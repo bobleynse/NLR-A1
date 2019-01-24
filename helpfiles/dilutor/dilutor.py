@@ -15,7 +15,7 @@ def dilute(tile, step):
 
     # declare variables
     shape = np.shape(dilutedTile)
-    rectSize = 5
+    rectSize = 7
     rectBuf = (rectSize // 2)
 
     # rows
