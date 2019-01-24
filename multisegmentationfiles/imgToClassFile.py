@@ -6,12 +6,12 @@ ImageFile.LOAD_TRUNCATED_IMAGES = True
 from datetime import datetime
 
 # Saving path of every image.
-trainInputImagesPath = 'segmentation-dataset/train-input'
-trainOutputImagesPath = 'segmentation-dataset/train-output'
-testInputImagesPath = 'segmentation-dataset/test-input'
-testOutputImagesPath = 'segmentation-dataset/test-output'
-validInputImagesPath = 'segmentation-dataset/valid-input'
-validOutputImagesPath = 'segmentation-dataset/valid-output'
+trainInputImagesPath = 'multisegmentation-dataset/train-input'
+trainOutputImagesPath = 'multisegmentation-dataset/train-output'
+testInputImagesPath = 'multisegmentation-dataset/test-input'
+testOutputImagesPath = 'multisegmentation-dataset/test-output'
+validInputImagesPath = 'multisegmentation-dataset/valid-input'
+validOutputImagesPath = 'multisegmentation-dataset/valid-output'
 
 trainInputImagesFiles = listdir(trainInputImagesPath)
 trainOutputImagesFiles = listdir(trainOutputImagesPath)
