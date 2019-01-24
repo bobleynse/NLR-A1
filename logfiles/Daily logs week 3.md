@@ -1,4 +1,4 @@
-# Maandag 21 Januari
+# Maandag 21 januari
 
 ### Iedereen | 6 uur
 - Voortgangspresentatie
@@ -20,7 +20,7 @@
 ### Midas | 3 uur
 - Post-processing, line-detection
 
-# Dinsdag 22 Januari
+# Dinsdag 22 januari
 ### Alex & Midas | 3 uur
 - accuracyberekening roadmap vs validation
 
@@ -32,23 +32,29 @@
 - Multiclassify getest
 - Supercomputer aan de praat krijgen en testen
 
-# 3 Woensdag
-### Rutger | 3 uur
+# Woensdag 23 januari
+### Rutger | 7 uur
 - Met de supercomputer onderzoeken welke rectsize het best werkt
-### Bob | 3 uur
+- Met de supercomputer onderzoeken of andere hidden layers invloed hebben
+
+### Bob | 8 uur
 - Onderzoekt of er een formule is voor een goede grote voor het hidden network
 - Onderzoekt hoe we een treshhold in het netwerk kunnen implementeren
+- Een verdunner gemaakt voor de roadmap zodat er minder scheiding tussen weg en gebouw wordt geclassificeerd
 
-### Alex | 
+### Alex | 6 uur
 - Kijkt of landelijke gebieden of stedelijke gebieden beter classificeren
 - rectsize=5, trainingsteps=100, lineslimit=200000, 6 training en 2 tests img. Trainingstijd:
 
+# Donderdag 24 januari
+
+- Classificeren met de dunnere wegen
+- Dunnere wegen in het technisch rapport
+- Multi-segmentation ombouwen 
 
 ## Toekomstplannen
-- Infrarood toevoegen
-- Het "weg, geen weg" trainen met onze eigen data
+- Het "weg, geen weg" trainen met infrarood
 - Tijdsberekening 
-- Een gescheiden, "meerdere wegen" classificatie schrijven
 - Met grafieken onderbouwen waarom we een specifieke hoeveelheid 
 - Een postprocessing algoritme schrijven. Bijv. losse pixels wegfilteren die overblijven.
 - Programma schrijven die wegen op een satellietfoto plot
