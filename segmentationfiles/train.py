@@ -18,10 +18,10 @@ testData =  np.loadtxt(testDataFileName, delimiter=',').astype(int)
 
 # Specify the neural network you want to use
 trainingSteps = 100
-totalTrainingSteps = 500
+totalTrainingSteps = 2000
 
 featureColumns = [tf.contrib.layers.real_valued_column("", dimension=75)]
-hiddenUnits = [100, 150, 100, 50]
+hiddenUnits = [210, 280, 140, 70]
 classes = 2
 
 # specify a folder name for the model
