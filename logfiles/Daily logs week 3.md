@@ -14,6 +14,8 @@
 
 ### Alex 
 - Huidige training/ classificatie verbeteren, IR, andere hidden layers
+- rectsize = 7, trainingsteps=1000, lineslimit=400000,2 test 8 train images, trainen op fotos met veel stedelijke gebieden:
+0.66 accuracy maar slecht resultaat.
 
 ### Midas | 3 uur
 - Post-processing, line-detection
@@ -39,6 +41,7 @@
 
 ### Alex | 
 - Kijkt of landelijke gebieden of stedelijke gebieden beter classificeren
+- rectsize=5, trainingsteps=100, lineslimit=200000, 6 training en 2 tests img. Trainingstijd:
 
 
 ## Toekomstplannen

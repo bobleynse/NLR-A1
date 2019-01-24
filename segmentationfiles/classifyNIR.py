@@ -11,7 +11,7 @@ if(len(sys.argv) != 4):
 # create an output image
 totalOutputImage = Image.new('RGB', (2496,2496))
 
-rectSize = 7
+rectSize = 5
 # the amount of parts you divide the input images in, when you don't divide your input can get to big (tensor proto error)
 parts = 4
 partSize = 2500 / parts
