@@ -20,9 +20,6 @@ def dilute(tile, step):
 
     # rows
     for row in range(shape[0] - (rectBuf + 1)):
-        if row % 250 == 0:
-            print('{}%'.format(((row + (step*shape[0])) / ((shape[0]*2) * len(listdir('input-roadmap'))))*100))
-
         for col in range(shape[1]):
             # rows top
             if dilutedTile[row, col] == 0 and dilutedTile[row + 1, col] == 255:
@@ -35,9 +32,6 @@ def dilute(tile, step):
                     
     # columns
     for row in range(shape[0]):
-        if row % 250 == 0:
-            print('{}%'.format((((row+shape[0]) + (shape[0]*2 * step)) / ((shape[0]*2) * len(listdir('input-roadmap'))))*100))
-
         for col in range(shape[1] - (rectBuf + 1)):
             # colums top
             if dilutedTile[row, col] == 0 and dilutedTile[row, col + 1] > 175:
