@@ -52,9 +52,9 @@ print(str(datetime.now()) + ': input and output files check success')
 # Modify the amound to pixel lines in the .csv file in this function.
 def writeDataFile(inputImagePath, inputNIRPath, outputImagePath, inputImageFiles, inputNIRFiles, outputImageFiles, dataFileName):
     dataFile = open(dataFileName, 'w')
-    rectSize = 7
+    rectSize = 5
     linesCount = 0
-    linesLimit = 200000
+    linesLimit = 400000
     linesCountPerImage = 0
     linesLimitPerImage = (linesLimit / len(inputImageFiles)) + 1
     
