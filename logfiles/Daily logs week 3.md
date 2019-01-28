@@ -44,7 +44,13 @@
 
 ### Alex | 6 uur
 - Kijkt of landelijke gebieden of stedelijke gebieden beter classificeren
-- rectsize=5, trainingsteps=100, lineslimit=200000, 6 training en 2 tests img. Trainingstijd:
+- rectsize=5, trainingsteps=100, lineslimit=200000, 6 training en 2 tests img. Trainingstijd: 20 min. Getrained met afbeeldingen van stedelijke gebieden en resultaat is goed. Niet getrained met dunne wegen.
+- rectsize=5, trainingsteps=100, lineslimit=200000, 5 training 2 test img. Trainingstijd: 23 minuten. Getrained met dunne wegen, Prima resultaten maar weg is erg dun.
+- rectsize=5, trainingsteps=100, lineslimit=200000, 7 training 2 test img. Trainingstijd: 15 minuten. Getrained op afbeeldingen zonder snelwegen. waaardeloos reulstaat, waarschijnlijk doordat in de test wel snelwegen stonden.
+- rectsize=5, trainingsteps=100, lineslimit=200000, 7 training 2 test img. Trainingstijd: 22 minuten. Getrained op afbeeldingen zonder snelwegen met verdunde wegen en getest op afbeeldingen zonder snelwegen. Slechte resultaten. conclusie: gewoon snelwegen bewaren.
+- rectsize=5, trainingsteps=100, lineslimit=200000, 7 training 2 test img. Nieuw netwerk: 150x200x150x100: resultaat is niet enorm veel beter dan normaal. wel hogere accuracy!!!
+# Tests voor grafieken en final tests
+- rectsize=5, trainingsteps=100, lineslimit=400000, 7 training 2 test img, acc= 0.68!!!. 
 
 # Donderdag 24 januari
 
