@@ -10,8 +10,8 @@ trainInputImagesPath = 'multisegmentation-dataset/train-input'
 trainOutputImagesPath = 'multisegmentation-dataset/train-output'
 testInputImagesPath = 'multisegmentation-dataset/test-input'
 testOutputImagesPath = 'multisegmentation-dataset/test-output'
-validInputImagesPath = 'multisegmentation-dataset/valid-input'
-validOutputImagesPath = 'multisegmentation-dataset/valid-output'
+#validInputImagesPath = 'multisegmentation-dataset/valid-input'
+#validOutputImagesPath = 'multisegmentation-dataset/valid-output'
 
 trainInputImagesFiles = listdir(trainInputImagesPath)
 trainOutputImagesFiles = listdir(trainOutputImagesPath)
@@ -62,7 +62,7 @@ def writeDataFile(inputImagePath, outputImagePath, inputImageFiles, outputImageF
     dataFile = open(dataFileName, 'w')
     rectSize = 5
     linesCount = 0
-    linesLimit = 300000
+    linesLimit = 200000
     linesCountPerImage = 0
     linesLimitPerImage = (linesLimit / len(inputImageFiles)) + 1
     
@@ -169,9 +169,9 @@ def writeDataFile(inputImagePath, outputImagePath, inputImageFiles, outputImageF
     print(str(datetime.now()) + ': ' + dataFileName + ' linesCount:', linesCount)
 
 # Creating .csv files.
-trainDataFileName = 'segmentation-dataset/train.csv'
-testDataFileName = 'segmentation-dataset/test.csv'
-validDataFileName = 'segmentation-dataset/valid.csv'
+trainDataFileName = 'multisegmentation-dataset/train.csv'
+testDataFileName = 'multisegmentation-dataset/test.csv'
+validDataFileName = 'multisegmentation-dataset/valid.csv'
 
 # Writing pixel arrays into .csv files.
 print(str(datetime.now()) + ': writing trainDataFile')

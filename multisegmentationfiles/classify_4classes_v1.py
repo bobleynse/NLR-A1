@@ -34,7 +34,7 @@ classes = 4
 classifier = tf.contrib.learn.DNNClassifier(feature_columns = featureColumns,
 												hidden_units = hiddenUnits,
 												n_classes = classes,
-												model_dir = 'models/model_22-01')
+												model_dir = 'models/model_28-01')
 
 def extractFeatures():
     features = np.zeros((((inputImageXSize - ((rectSize//2)*2)) * (inputImageYSize - ((rectSize//2)*2))), rectSize*rectSize*3), dtype=np.int)

@@ -5,9 +5,9 @@ import tensorflow as tf
 
 print(str(datetime.now()) + ': loading data files')
 # Data sets
-trainDataFileName = 'segmentation-dataset/train.csv'
-testDataFileName = 'segmentation-dataset/test.csv'
-validationDataFileName = 'segmentation-dataset/valid.csv'
+trainDataFileName = 'multisegmentation-dataset/train.csv'
+testDataFileName = 'multisegmentation-dataset/test.csv'
+validationDataFileName = 'multisegmentation-dataset/valid.csv'
 # Load datasets.
 trainData = np.loadtxt(trainDataFileName, delimiter=',').astype(int)
 testData =  np.loadtxt(testDataFileName, delimiter=',').astype(int)
@@ -25,7 +25,7 @@ hiddenUnits = [100, 150, 100, 100, 50]
 classes = 4
 
 # specify a folder name for the model
-modelDir = 'models/model_22-01'
+modelDir = 'models/model_28-01'
 classifierConfig = tf.contrib.learn.RunConfig(save_checkpoints_secs = None, save_checkpoints_steps = trainingSteps)
 
 classifier = tf.contrib.learn.DNNClassifier(feature_columns = featureColumns,
