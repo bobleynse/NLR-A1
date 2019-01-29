@@ -21,6 +21,9 @@
 - Feedback eindpresentatie in het rapport verwerken
 - Inleveren technisch rapport
 
+# To Do
+- Percentage verbetering dilutor zoeken
+
 # Vragen
 - Beginnen met een samenvatting?
 - Moeten we dieper op de code ingaang?
