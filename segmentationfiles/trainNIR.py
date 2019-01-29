@@ -17,7 +17,7 @@ print(np.shape(testData))
 
 
 # Specify the neural network you want to use
-rectSize = 7 
+rectSize = 5 
 # Size between checkpoints
 trainingSteps = 100
 # total Size

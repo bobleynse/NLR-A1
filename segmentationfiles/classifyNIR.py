@@ -11,14 +11,14 @@ if(len(sys.argv) != 4):
 # create an output image
 totalOutputImage = Image.new('RGB', (2496,2496))
 
-rectSize = 7
+rectSize = 5
 # the amount of parts you divide the input images in, when you don't divide your input can get to big (tensor proto error)
 parts = 4
 partSize = 2500 / parts
 
 # adjust the neural network, make sure you use the same model as in train.py
-hiddenUnits = [100, 150, 100, 50]
-totalTrainingSteps = 500
+hiddenUnits = [180, 280, 140, 70]
+totalTrainingSteps = 2000
 classes = 2
 
 
