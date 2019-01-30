@@ -18,7 +18,7 @@ partSize = 2500 / parts
 
 # adjust the neural network, make sure you use the same model as in train.py
 hiddenUnits = [210, 280, 140, 70]
-totalTrainingSteps = 10000
+totalTrainingSteps = 500
 classes = 2
 
 
