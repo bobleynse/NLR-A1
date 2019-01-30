@@ -21,7 +21,7 @@ rectSize = 5
 # Size between checkpoints
 trainingSteps = 100
 # total Size
-totalTrainingSteps = 2000
+totalTrainingSteps = 500
 
 featureColumns = [tf.contrib.layers.real_valued_column("", dimension=rectSize*rectSize*4)]
 hiddenUnits = [210, 280, 140, 70]
