@@ -9,18 +9,16 @@
 ### Bob | 5 uur
 - 4 bands NIR trainen
 
-### Rutger
-- Multi road classification
+# Dinsdag 22 januari
 
-### Alex 
+### Alex | 4 uur
 - Huidige training/ classificatie verbeteren, IR, andere hidden layers
 - rectsize = 7, trainingsteps=1000, lineslimit=400000,2 test 8 train images, trainen op fotos met veel stedelijke gebieden:
 0.66 accuracy maar slecht resultaat.
 
-### Midas | 3 uur
+### Midas | 7 uur
 - Post-processing, line-detection
 
-# Dinsdag 22 januari
 ### Alex & Midas | 3 uur
 - accuracyberekening roadmap vs validation
 
@@ -54,19 +52,34 @@
 
 # Donderdag 24 januari
 
+### Iedereen | 1 uur
+- Meeting met Caitlin
+
+### Midas | 6 uur
+- Het netwerk testen met Conv Nets
+
+### Alex | 6 uur
+- Testen/trainen op bijvoorbeeld enkel stedelijk gebied of enkel platteland
+
+### Bob | 6 uur
 - Classificeren met de dunnere wegen
 - Dunnere wegen in het technisch rapport
-- Multi-segmentation ombouwen 
 
-## Toekomstplannen
-- Het "weg, geen weg" trainen met infrarood
-- Tijdsberekening 
-- Met grafieken onderbouwen waarom we een specifieke hoeveelheid 
-- Een postprocessing algoritme schrijven. Bijv. losse pixels wegfilteren die overblijven.
-- Programma schrijven die wegen op een satellietfoto plot
-- Runnen op en externe GPU
+### Rutger | 6 uur
+- NIR aan Multi-segmentation toevoegen
+- Dunnere wegen aan Multi-segmentation toevoegen
 
-## Vragen
-- Eerst weg segmenteren en daaroverheen de rest of alles tegelijk segmenteren?
-- Kunnen we classifien met betrekking tot de classifications van de omliggende punten
-- Begeleiding bij de supercomputer
+# Vijdag 25 januari
+
+
+### Midas | 7 uur
+- Het netwerk testen met Conv Nets
+
+### Alex | 7 uur
+- Het netwerk testen met 1 soort weg (snelweg)
+
+### Bob | 6 uur
+- Technisch rapport aanvullen
+
+### Rutger | 7 uur
+- Multi-segmentation debuggen
