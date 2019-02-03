@@ -54,7 +54,7 @@ def writeDataFile(inputImagePath, inputNIRPath, outputImagePath, inputImageFiles
     dataFile = open(dataFileName, 'w')
     rectSize = 7
     linesCount = 0
-    linesLimit = 200000000
+    linesLimit = 400000
     linesCountPerImage = 0
     linesLimitPerImage = (linesLimit / len(inputImageFiles)) + 1
     

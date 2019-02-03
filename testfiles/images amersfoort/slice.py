@@ -6,7 +6,7 @@ from tifffile import imread, imsave
 
 PIL.Image.MAX_IMAGE_PIXELS = 725050001
 
-# 255: Background (default)
+#   0: Background (default)
 #  17: Highway
 #  34: Main road
 #  51: Regional road
