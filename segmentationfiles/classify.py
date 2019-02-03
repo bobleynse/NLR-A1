@@ -9,7 +9,7 @@ if(len(sys.argv) != 3):
 
 print(str(datetime.now()) + ': initializing input data...')
 
-rectSize = 5
+rectSize = 7
 
 inputImagePath = 'image-input/'
 inputImageFile = sys.argv[1]
@@ -27,7 +27,7 @@ featureColumns = [tf.contrib.layers.real_valued_column("", dimension=75)]
 # hiddenUnits = [100, 150, 200, 150, 100, 50]
 
 # adjust the neural network, make sure you use the same model as in train.py
-hiddenUnits = [100, 150, 100, 50]
+hiddenUnits = [210, 280, 140, 70]
 classes = 2
 
 # specify which trained model you want to use

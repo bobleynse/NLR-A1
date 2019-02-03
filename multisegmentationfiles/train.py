@@ -22,7 +22,7 @@ totalTrainingSteps = 500
 
 featureColumns = [tf.contrib.layers.real_valued_column("", dimension=75)]
 hiddenUnits = [100, 150, 100, 100, 50]
-classes = 4
+classes = 6
 
 # specify a folder name for the model
 modelDir = 'models/model_28-01'
