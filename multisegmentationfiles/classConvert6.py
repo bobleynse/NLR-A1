@@ -106,17 +106,17 @@ def writeDataFile(inputImagePath, outputImagePath, inputImageFiles, outputImageF
         for x in range(rectSize//2, inputImageXSize - (rectSize//2)):
             for y in range(rectSize//2, inputImageYSize - (rectSize//2)):
                 isRoadPixel = outputImagePixels[x, y]
-                if(isRoadPixel == 0):
+                if(isRoadPixel == 238):
                     out_pixels_Background.append((x, y))
-                elif(isRoadPixel > 0 and isRoadPixel <= 20):
+                elif(isRoadPixel == 251):
                     out_pixels_Highway.append((x, y))
-                elif(isRoadPixel > 20 and isRoadPixel <= 40):
+                elif(isRoadPixel == 250):
                     out_pixels_Mainroad.append((x, y))
-                elif(isRoadPixel > 40 and isRoadPixel <= 60):
+                elif(isRoadPixel == 249):
                     out_pixels_Regionalroad.append((x, y))
-                elif(isRoadPixel > 60 and isRoadPixel <= 80):
+                elif(isRoadPixel == 248):
                     out_pixels_Localroad.append((x, y))
-                elif(isRoadPixel > 80):
+                elif(isRoadPixel == 247):
                     out_pixels_Street.append((x, y))
                    
 

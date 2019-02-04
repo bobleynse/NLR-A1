@@ -21,11 +21,11 @@ trainingSteps = 100
 totalTrainingSteps = 500
 
 featureColumns = [tf.contrib.layers.real_valued_column("", dimension=75)]
-hiddenUnits = [100, 150, 100, 100, 50]
+hiddenUnits = [210, 280, 140, 70]
 classes = 6
 
 # specify a folder name for the model
-modelDir = 'models/model_28-01'
+modelDir = 'models/model_04-02'
 classifierConfig = tf.contrib.learn.RunConfig(save_checkpoints_secs = None, save_checkpoints_steps = trainingSteps)
 
 classifier = tf.contrib.learn.DNNClassifier(feature_columns = featureColumns,
